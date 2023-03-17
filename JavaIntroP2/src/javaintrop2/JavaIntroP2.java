@@ -69,9 +69,54 @@ Si no se cumple ninguno de los valores anteriores mostrar el mensaje “No exist
         }
         System.out.println("la nota "+nota+" es una nota valida");
         
+        System.out.println("Ej. 4");
         
-        
-        
+        /*Escriba un programa que lea 20 números. Si el número leído es igual a cero se
+debe salir del bucle y mostrar el mensaje "Se capturó el numero cero". El
+programa deberá calcular y mostrar el resultado de la suma de los números
+leídos, pero si el número es negativo no debe sumarse. Nota: recordar el uso
+de la sentencia break.*/
+        int suma = 0;
+        int aux = 0;
+        int opc = 0;
+
+        do {
+
+            System.out.println("Ingrese un numero, o 0 para salir");
+            opc = leer1.nextInt();
+
+            if (opc == 0) {
+                System.out.println("Se capturó el numero cero");
+                break;
+            }
+
+            if (opc > 0) {
+                suma += opc;
+            }
+
+            aux++;
+
+        } while (aux < 20);
+        System.out.println("La suma de los numeros positivos ingresados da "+suma);
+        System.out.println("Ej. 6");
+/*Realizar un programa que lea 4 números (comprendidos entre 1 y 20) e imprima
+el número ingresado seguido de tantos asteriscos como indique su valor. Por
+ejemplo:
+5 *****
+3 ***
+11 ***********
+2 **
+*/
+        System.out.println("Ingrese 4 valores entre 1 y 20");
+int star;
+for (int i=0;i<4;i++){
+    star = leer1.nextInt();
+    System.out.print(star+": ");
+    for (int j=0;j<star;j++){
+        System.out.print("*");
+    }
+    System.out.println(" ");
+}
         
 }
 }
