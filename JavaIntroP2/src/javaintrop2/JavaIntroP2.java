@@ -111,6 +111,10 @@ ejemplo:
 int star;
 for (int i=0;i<4;i++){
     star = leer1.nextInt();
+    while ((star<0)||(star>20)){
+        System.out.println("Numero no valido, intentelo nuevamente");
+        star = leer1.nextInt();
+    }
     System.out.print(star+": ");
     for (int j=0;j<star;j++){
         System.out.print("*");
