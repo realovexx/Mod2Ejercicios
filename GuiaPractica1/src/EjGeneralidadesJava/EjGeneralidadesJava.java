@@ -3,14 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package guiapractica1;
+package EjGeneralidadesJava;
 
 
 /**
  *
  * @author OvExX
  */
-public class GuiaPractica1 {
+public class EjGeneralidadesJava {
 
     /**
      * @param args the command line arguments
