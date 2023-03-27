@@ -7,9 +7,9 @@ package ejarreglos;
 
 /**
  *
- * @author ovexx
+ * @author OvExX
  */
-public class EjArreglos {
+public class Ej3 {
 
     /**
      * @param args the command line arguments

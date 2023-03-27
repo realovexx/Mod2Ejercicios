@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author ovexx
+ * @author OvExX
  */
 public class Ej2 {
 
@@ -40,5 +40,6 @@ Scanner leer = new Scanner(System.in);
      for (int i=0; i<dim;i++){
          vector[i] = (int)(Math.random()*100);
      }
-  }  
+    }
+    
 }

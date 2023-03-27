@@ -7,7 +7,7 @@ package ejarreglos;
 
 /**
  *
- * @author ovexx
+ * @author OvExX
  */
 public class Ej1 {
 
