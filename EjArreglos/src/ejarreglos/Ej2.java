@@ -27,21 +27,18 @@ Scanner leer = new Scanner(System.in);
         llenarVector(vector,dim);
         System.out.println("Ahora elige un numero del 1 al 100 a ver si está");
         int num = leer.nextInt();
-        int pos = 0;
         int cont = 0;
         for (int i=0 ; i < dim ; i++){
             if (vector[i]==num){
-                pos = i;
+                System.out.println("El numero se encontró en la posicion "+i);
                 cont += 1;
             }
-        }
-        System.out.println("El numero se encontró en la posicion "+pos);
-        System.out.println("Por otro lado, el numero ha aparecido "+cont+" veces");
+        }       
+        System.out.println("El numero ha aparecido "+cont+" veces");
     }
  public static void llenarVector(int vector[], int dim){
      for (int i=0; i<dim;i++){
          vector[i] = (int)(Math.random()*100);
      }
- 
- }  
+  }  
 }
