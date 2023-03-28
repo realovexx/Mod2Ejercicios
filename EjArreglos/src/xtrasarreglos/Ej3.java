@@ -25,7 +25,7 @@ Scanner leer = new Scanner(System.in);
 System.out.println("Ingrese la dimension del vector");
 int dim = leer.nextInt();
 int vector[] = llenarVector(dim);
-mostrarVector(vector, dim);
+mostrarVector(vector);
     }
     public static int[] llenarVector(int dim){
         int vector [] = new int [dim];
@@ -35,8 +35,8 @@ mostrarVector(vector, dim);
         return vector;
     }
     
-    public static void mostrarVector(int[] vector, int dim){
-        for (int i = 0 ; i < dim ; i++){
+    public static void mostrarVector(int[] vector){
+        for (int i = 0 ; i < vector.length ; i++){
             System.out.print("["+vector[i]+"]");
         }
         System.out.println("");
