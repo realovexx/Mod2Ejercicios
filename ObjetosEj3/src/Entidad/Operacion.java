@@ -65,11 +65,13 @@ public class Operacion {
     
     public double dividir(){
         double resultado;
+        double n1 = (double) getNumero1();
+        double n2 = (double) getNumero2();
         if (getNumero2()==0){
             System.out.println("Error: No se puede dividir por Cero");
             resultado = 0;
         }else{
-            resultado = (double)(getNumero1()/getNumero2());
+            resultado = n1/n2;
         }
         return resultado;
     }
