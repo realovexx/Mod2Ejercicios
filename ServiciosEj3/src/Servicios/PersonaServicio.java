@@ -36,28 +36,20 @@ public class PersonaServicio {
     }
 
     public boolean esMayorDeEdad(Persona wacho) {
-        boolean mayor;
-        if (wacho.getEdad() < 18) {
-            mayor = false;
-        } else {
-            mayor = true;
-        }
-        return mayor;
+       return wacho.getEdad() >= 18;
     }
+    
     public int calcularIMC(Persona wacho){
-        int resultado;
         double alt = (double) wacho.getAltura()/100;
         double imc = wacho.getPeso()/(Math.pow(alt, 2));
-       
         if (imc < 20){
-            resultado = -1;
+            return -1;
         }else if (imc>=20 && imc <= 25){
-            resultado = 0;
+            return 0;
         }else{
-            resultado = 1;
+            return 1;
         }
-        return resultado;
-    }
+        }
     
     public void infoPersona(Persona wacho){
           System.out.println("La persona " + wacho.getNombre() + " es mayor de edad?: " +esMayorDeEdad(wacho));
