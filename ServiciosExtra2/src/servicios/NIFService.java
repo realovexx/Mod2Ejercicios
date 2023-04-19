@@ -18,10 +18,14 @@ public class NIFService {
         System.out.println("Se creará su NIF");
         System.out.println("Ingrese su numero de DNI");
         long dni = leer.nextLong();
+        String letra = calcLetra(dni);
+        return new NIF(dni,letra);
+    }
+    
+    public String calcLetra(long dni){
         String[] letras = {"T","R","W","A","G","M","Y","F","P","D","X","B","N","J","Z","S","Q","V","H","L","C","K","E"};
         int pos = (int) dni%23;
-        String letra = letras[pos];
-        return new NIF(dni,letra);
+        return letras[pos];
     }
     public String mostrar(NIF verif){
         return "NIF: "+verif.getDni()+"-"+verif.getLetra();
