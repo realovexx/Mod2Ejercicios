@@ -16,8 +16,14 @@ import java.util.Scanner;
 public class CadenaServicio {
     public void mostrarVocales(Cadena c){
        int vocal = 0;
+       /*  for (int i = 0; i < obj.getLongitud(); i++) {
+            switch (obj.getFrase().substring(i, i+1).toLowerCase()){
+                case "a": case"e": case"i": case"o": case"u": 
+                    vocal++; 
+                    break;
+            }
+        }*/
         for (int j = 0 ; j < c.getLongitud() ; j++){
-            
             if (c.getFrase().substring(j,j+1).equalsIgnoreCase("a")||c.getFrase().substring(j,j+1).equalsIgnoreCase("e")||c.getFrase().substring(j,j+1).equalsIgnoreCase("i")||c.getFrase().substring(j,j+1).equalsIgnoreCase("o")||c.getFrase().substring(j,j+1).equalsIgnoreCase("u")){
                 vocal++;
             }
@@ -27,11 +33,14 @@ public class CadenaServicio {
     
     public String invertirFrase(Cadena c){
         String[] fraseInv = new String[c.getLongitud()];
+        String frase = "";
+        /*        for (int i = c.frase.length() - 1; i >= 0; i--) {
+            frase += c.getFrase().charAt(i);
+        }*/
         for (int i=0;i<c.getLongitud();i++){
             fraseInv[i] = c.getFrase().substring(c.getLongitud()-i-1,c.getLongitud()-i);
         }
-        String frase = "";
-          for (int i=0;i<c.getLongitud();i++){
+        for (int i=0;i<c.getLongitud();i++){
           frase = frase.concat(fraseInv[i]);  
         }
         return frase;
