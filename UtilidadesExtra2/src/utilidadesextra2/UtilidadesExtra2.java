@@ -5,6 +5,9 @@
  */
 package utilidadesextra2;
 
+import entidades.Ahorcado;
+import servicios.AhorcadoService;
+
 /**
  *
  * @author OvExX
@@ -15,7 +18,8 @@ public class UtilidadesExtra2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-
+    AhorcadoService as = new AhorcadoService();
+    as.juego();
     }
     
 }
